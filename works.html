@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Journey — Patrick Nanlohy</title><style>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Works — Patrick Nanlohy</title><style>
 body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#fff8f4;color:#1f2a44}
 .container{max-width:1120px;margin:0 auto;padding:24px 20px 60px}
 a{color:#ff6b4a}
@@ -6,23 +6,25 @@ header{position:sticky;top:0;background:linear-gradient(180deg,rgba(255,255,255,
 .nav{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:10px 20px}
 .brand{display:flex;gap:12px;align-items:center}.brand-badge{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#ff6b4a,#ffa58d);color:#fff;font-weight:800}
 .menu{justify-self:center;display:flex;gap:6px}.menu a{padding:8px 12px;border-radius:12px;color:#1f2a44;border:1px solid transparent}.menu a:hover{background:#fff;border-color:#f3e5df;text-decoration:none}.menu a.active{background:linear-gradient(180deg,#fff,#ffefe9);border-color:#ffd8ca;color:#9b3b22}
-.entry{padding:18px;border-radius:14px;background:#fff;border:1px solid #f3e5df;box-shadow:0 10px 30px rgba(69,32,6,.12);margin-bottom:14px}
-.entry .top{display:flex;justify-content:space-between;gap:12px}
+.card{background:#fff;border:1px solid #f3e5df;border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(69,32,6,.12);margin-bottom:18px}
+h1{margin:12px 0 8px}
+h2{margin:0 0 8px}
+small.muted{color:#5f6b82}
 </style></head><body>
-<header><nav class="nav"><div class="brand"><div class="brand-badge">PN</div><div><strong>Patrick Nanlohy</strong><br><small style="color:#5f6b82">CS @ Lamar University</small></div></div><div class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="works.html">Works</a><a href="journey.html" class="active">Journey</a><a href="contact.html">Contact</a></div><div></div></nav></header>
+<header><nav class="nav"><div class="brand"><div class="brand-badge">PN</div><div><strong>Patrick Nanlohy</strong><br><small style="color:#5f6b82">CS @ Lamar University</small></div></div><div class="menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="works.html" class="active">Works</a><a href="journey.html">Journey</a><a href="contact.html">Contact</a></div><div></div></nav></header>
 <main class="container">
-  <h1>Journey</h1>
-  <div class="entry"><div class="top"><strong>B.S. in Computer Science — Lamar University</strong><span>2023 — 2027 (exp.)</span></div>
-    <p>I’m pursuing my bachelor’s degree in Computer Science and building a strong foundation across programming, systems, and data. I aim to graduate with a portfolio of practical projects and internship experience that shows I can contribute on day one.</p>
+  <h1>Selected Work</h1>
+  <div class="card"><h2>Energy Forecasting Pipeline</h2>
+    <p>I built a Python pipeline to clean, join, and analyze more than a million energy meter readings. After exploring the data to understand seasonality and outliers, I implemented baseline models and then experimented with ARIMA and gradient boosting. The final approach improved mean absolute error while keeping the code organized into reproducible steps with clear outputs and charts.</p>
+    <small class="muted">Python · Pandas · Statsmodels</small>
   </div>
-  <div class="entry"><div class="top"><strong>Relevant Coursework (current & upcoming)</strong><span>2025</span></div>
-    <p>Cybersecurity: Systems · Distributed Systems · Introduction to Computer Architecture · Operating Systems · UNIX++ · Database Design. These courses deepen my understanding of concurrency, scheduling, processes, memory, storage, security models, and how distributed components coordinate reliably.</p>
+  <div class="card"><h2>Fryce POS</h2>
+    <p>I designed a small point‑of‑sale desktop app for a campus pop‑up. It tracks inventory, sales, and daily summaries, and can export CSV/PDF for bookkeeping. The focus was on quick keyboard input, accurate totals, and easy setup so non‑technical users could operate it confidently.</p>
+    <small class="muted">Python · SQLite · Tkinter</small>
   </div>
-  <div class="entry"><div class="top"><strong>Student Research Assistant — Lamar</strong><span>Spring 2025</span></div>
-    <p>Supported a data‑driven energy project by building a Python pipeline to ingest, clean, and model meter readings. Focused on versioned datasets, reproducible notebooks, and clear visuals for faculty review.</p>
-  </div>
-  <div class="entry"><div class="top"><strong>IT Helpdesk Intern — Efficient Systems</strong><span>Summer 2025</span></div>
-    <p>Helped support more than a hundred users by diagnosing connectivity issues, improving Wi‑Fi reliability, and automating small provisioning tasks. Learned how to communicate clearly under time pressure and write steps that others can follow.</p>
+  <div class="card"><h2>Farm Tycoon Prototype</h2>
+    <p>This game prototype explores the core loop of planting, harvesting, upgrading tools, and saving progress. I used Lua scripting to manage state, persistence, and simple UI feedback. The project taught me about economy balancing, player feedback, and how to structure code for iterative gameplay changes.</p>
+    <small class="muted">Roblox Studio · Lua</small>
   </div>
 </main>
 </body></html>
